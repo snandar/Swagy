@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		23F8946D2849E381000E20D9 /* TraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8946B2849E376000E20D9 /* TraceTests.swift */; };
+		23F8946E2849E446000E20D9 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F894692849E2EB000E20D9 /* Record.swift */; };
 		951641A425D23F2300D18813 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951641A325D23F2300D18813 /* Function.swift */; };
 		951641AB25D2CE2400D18813 /* Native.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951641AA25D2CE2400D18813 /* Native.swift */; };
 		951641BC25D6978500D18813 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951641BB25D6978500D18813 /* Table.swift */; };
@@ -84,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23F894692849E2EB000E20D9 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		23F8946B2849E376000E20D9 /* TraceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceTests.swift; sourceTree = "<group>"; };
 		951641A325D23F2300D18813 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		951641AA25D2CE2400D18813 /* Native.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Native.swift; sourceTree = "<group>"; };
 		951641BB25D6978500D18813 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -144,6 +148,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23F894682849E2CD000E20D9 /* Tracer */ = {
+			isa = PBXGroup;
+			children = (
+				23F894692849E2EB000E20D9 /* Record.swift */,
+			);
+			path = Tracer;
+			sourceTree = "<group>";
+		};
 		951641CE25D7DFF400D18813 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 		OBJ_11 /* SwagCore */ = {
 			isa = PBXGroup;
 			children = (
+				23F894682849E2CD000E20D9 /* Tracer */,
 				OBJ_12 /* Binary */,
 				OBJ_18 /* Interpreter */,
 				951641CE25D7DFF400D18813 /* Utilities */,
@@ -220,6 +233,7 @@
 				OBJ_33 /* SwagCoreTests.swift */,
 				OBJ_34 /* SwagTests.swift */,
 				OBJ_35 /* XCTestManifests.swift */,
+				23F8946B2849E376000E20D9 /* TraceTests.swift */,
 			);
 			name = SwagTests;
 			path = Tests/SwagTests;
@@ -387,6 +401,7 @@
 				951641D025D7E04300D18813 /* Extensions.swift in Sources */,
 				OBJ_62 /* Global.swift in Sources */,
 				OBJ_63 /* ControlInstructions.swift in Sources */,
+				23F8946E2849E446000E20D9 /* Record.swift in Sources */,
 				OBJ_64 /* Instructions.swift in Sources */,
 				951641A425D23F2300D18813 /* Function.swift in Sources */,
 				OBJ_65 /* MemoryInstructions.swift in Sources */,
@@ -413,6 +428,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_89 /* SwagCoreTests.swift in Sources */,
+				23F8946D2849E381000E20D9 /* TraceTests.swift in Sources */,
 				OBJ_90 /* SwagTests.swift in Sources */,
 				OBJ_91 /* XCTestManifests.swift in Sources */,
 			);
