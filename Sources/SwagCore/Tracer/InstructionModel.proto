@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message InstructionProtoc{
+    int64 id = 1;
+    string instruction = 2;
+    int32 opcode = 3;
+    int64 funcIndex = 4;
+    int64 pc = 5;
+
+}
+
+message InstructionsProtoc {
+    repeated InstructionProtoc instructions = 1;
+}

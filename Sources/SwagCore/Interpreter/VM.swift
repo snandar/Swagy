@@ -32,6 +32,10 @@ public struct VM {
     /// to record the pointer passed to the current `free` function
     public var currentFreedPointer: UInt64? = nil
     
+    
+    // TRACING
+    //let record = Record()
+    
     public init(module: Module) {
         self.module = module
         operandStack = OperandStack()
@@ -286,6 +290,8 @@ extension VM {
         } else {
             print("\(instr.opcode)")
         }
+        
+
         
         switch instr.opcode {
         // MARK: Control Instructions

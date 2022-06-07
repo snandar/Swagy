@@ -3,13 +3,18 @@
 //  SwagCore
 //
 //  Created by yin2 on 3/6/22.
-//
+//  Records in txt file -- discontinued
 
 import Foundation
 
 public class Record {
     
-    var instrData = ""
+    private var instrData = ""
+    private var countInstr = 0
+    
+//    public init(data: String) {
+//        self.instrData = data
+//    }
     
     public init() {
         
@@ -17,8 +22,6 @@ public class Record {
     
     // function to create file and write into the same.
     public func createAndWriteFile(stringData: String, fileName: String){
-//        let fileName = "Hello"//to change into func
-//        let stringData = "hi"//to change into func
         let documentDirectoryUrl = try! FileManager.default.url(
             for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
         )
@@ -36,9 +39,11 @@ public class Record {
     }
     
     //function to record instructions
-    public func recordInstruction(instrCounter: Int, instr: String, opCode: String, funcIndex: Int, instrIndex: Int) {
+    public func recordInstruction(instr: String, opCode: String, funcIndex: Int, instrIndex: Int) {
         
-        instrData += String(instrCounter)
+        countInstr += 1
+        
+        instrData += String(countInstr)
         instrData += instr
         instrData += opCode
         instrData += String(funcIndex)

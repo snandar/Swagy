@@ -16,9 +16,19 @@ final class TraceTests: XCTestCase {
         
     ]
     
+    //function to test record via text
     func testRecord() throws {
-        let record = Record()
-        record.createAndWriteFile(stringData: "ASDASDFASDF", fileName: "test")
+//        let record = Record()
+//        record.createAndWriteFile(stringData: "ASDASDFASDF", fileName: "test")
     }
     
+    func testProtoc() throws{
+//        var instructionpro = InstructionProtoc()
+//        instructionpro.opcode = 0
+//        instructionpro.id = 0
+//        instructionpro.instruction = "hi"
+//        instructionpro.pc = 0
+//        instructionpro.funcIndex = 0
+//        
+    }
 }
