@@ -23,12 +23,23 @@ final class TraceTests: XCTestCase {
     }
     
     func testProtoc() throws{
-//        var instructionpro = InstructionProtoc()
-//        instructionpro.opcode = 0
-//        instructionpro.id = 0
-//        instructionpro.instruction = "hi"
-//        instructionpro.pc = 0
-//        instructionpro.funcIndex = 0
-//        
+        
+        var instructionpro = InstructionProtoc()
+        instructionpro.opcode = 0
+        instructionpro.id = 0
+        instructionpro.instruction = "hi"
+        instructionpro.pc = 0
+        instructionpro.funcIndex = 0
+        
+//        print(instructionpro.instruction)
+        
+        //original --> byte
+        let binaryData = try instructionpro.serializedData()
+        
+        //byte --> original
+        let decodedInfo = try InstructionProtoc(serializedData: binaryData)
+        print(decodedInfo.instruction)
+
+        
     }
 }

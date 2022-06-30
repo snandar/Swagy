@@ -25,12 +25,13 @@
 		234E5059284E5349005680D9 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 234E5058284E5349005680D9 /* SwiftProtobufPluginLibrary */; };
 		234E505B284E5349005680D9 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 234E505A284E5349005680D9 /* protoc-gen-swift */; };
 		234E5067284F06EB005680D9 /* InstructionModel.proto in Sources */ = {isa = PBXBuildFile; fileRef = 234E5066284F06EB005680D9 /* InstructionModel.proto */; };
-		234E5069284F0704005680D9 /* InstructionModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E5068284F0704005680D9 /* InstructionModel.pb.swift */; };
 		234E506B284F07B4005680D9 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E506A284F07B4005680D9 /* Record.swift */; };
 		23549D35284E510F008DFB48 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 23549D34284E510F008DFB48 /* SwiftProtobuf */; };
 		23549D37284E510F008DFB48 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 23549D36284E510F008DFB48 /* SwiftProtobufPluginLibrary */; };
 		23549D39284E510F008DFB48 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 23549D38284E510F008DFB48 /* protoc-gen-swift */; };
 		23549D3C284E51C0008DFB48 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 23549D3B284E51C0008DFB48 /* SwiftProtobuf */; };
+		23AD14D428508642005C5B94 /* InstructionModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD14D328508642005C5B94 /* InstructionModel.pb.swift */; };
+		23AD14D628508CA8005C5B94 /* InstrRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD14D528508CA8005C5B94 /* InstrRecorder.swift */; };
 		23F8946D2849E381000E20D9 /* TraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8946B2849E376000E20D9 /* TraceTests.swift */; };
 		951641A425D23F2300D18813 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951641A325D23F2300D18813 /* Function.swift */; };
 		951641AB25D2CE2400D18813 /* Native.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951641AA25D2CE2400D18813 /* Native.swift */; };
@@ -96,8 +97,9 @@
 
 /* Begin PBXFileReference section */
 		234E5066284F06EB005680D9 /* InstructionModel.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = InstructionModel.proto; sourceTree = "<group>"; };
-		234E5068284F0704005680D9 /* InstructionModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionModel.pb.swift; sourceTree = "<group>"; };
 		234E506A284F07B4005680D9 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		23AD14D328508642005C5B94 /* InstructionModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionModel.pb.swift; sourceTree = "<group>"; };
+		23AD14D528508CA8005C5B94 /* InstrRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrRecorder.swift; sourceTree = "<group>"; };
 		23F8946B2849E376000E20D9 /* TraceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceTests.swift; sourceTree = "<group>"; };
 		951641A325D23F2300D18813 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		951641AA25D2CE2400D18813 /* Native.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Native.swift; sourceTree = "<group>"; };
@@ -127,9 +129,9 @@
 		OBJ_40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Dumper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dumper.swift; sourceTree = "<group>"; };
-		"Swag::Swag::Product" /* Swag */ = {isa = PBXFileReference; lastKnownFileType = text; path = Swag; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Swag::Swag::Product" /* Swag */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Swag; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Swag::SwagCore::Product" /* SwagCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwagCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Swag::SwagTests::Product" /* SwagTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Swag::SwagTests::Product" /* SwagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,12 +168,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23F894682849E2CD000E20D9 /* Tracer */ = {
+		23985137286DF1B0006D72DC /* InstructionTracer */ = {
 			isa = PBXGroup;
 			children = (
 				234E5066284F06EB005680D9 /* InstructionModel.proto */,
-				234E5068284F0704005680D9 /* InstructionModel.pb.swift */,
+				23AD14D328508642005C5B94 /* InstructionModel.pb.swift */,
 				234E506A284F07B4005680D9 /* Record.swift */,
+				23AD14D528508CA8005C5B94 /* InstrRecorder.swift */,
+			);
+			path = InstructionTracer;
+			sourceTree = "<group>";
+		};
+		23985138286DF1D3006D72DC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		23F894682849E2CD000E20D9 /* Tracer */ = {
+			isa = PBXGroup;
+			children = (
+				23985138286DF1D3006D72DC /* New Group */,
+				23985137286DF1B0006D72DC /* InstructionTracer */,
 			);
 			path = Tracer;
 			sourceTree = "<group>";
@@ -428,6 +447,7 @@
 				OBJ_56 /* Instruction.swift in Sources */,
 				OBJ_57 /* Module.swift in Sources */,
 				234E506B284F07B4005680D9 /* Record.swift in Sources */,
+				23AD14D628508CA8005C5B94 /* InstrRecorder.swift in Sources */,
 				951641AB25D2CE2400D18813 /* Native.swift in Sources */,
 				OBJ_58 /* Opcode.swift in Sources */,
 				OBJ_59 /* Reader.swift in Sources */,
@@ -437,6 +457,7 @@
 				OBJ_61 /* ControlFrame.swift in Sources */,
 				951641C825D7998800D18813 /* ParseError.swift in Sources */,
 				951641D025D7E04300D18813 /* Extensions.swift in Sources */,
+				23AD14D428508642005C5B94 /* InstructionModel.pb.swift in Sources */,
 				OBJ_62 /* Global.swift in Sources */,
 				OBJ_63 /* ControlInstructions.swift in Sources */,
 				OBJ_64 /* Instructions.swift in Sources */,
@@ -449,7 +470,6 @@
 				95B958A825C2ED09009A6131 /* Dumper.swift in Sources */,
 				OBJ_70 /* OperandStack.swift in Sources */,
 				OBJ_71 /* VM.swift in Sources */,
-				234E5069284F0704005680D9 /* InstructionModel.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +585,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 					"@executable_path",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -594,7 +614,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 					"@executable_path",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -717,7 +737,7 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -746,7 +766,7 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";

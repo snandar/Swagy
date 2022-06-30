@@ -16,7 +16,11 @@ public typealias Expr = [Instruction]
 
 extension Instruction: CustomStringConvertible {
     public var description: String {
-        return self.opcode.description
+        if let args = self.args {
+            return "\(self.opcode) \(args)"
+        } else {
+            return "\(self.opcode)"
+        }
     }
 }
 

@@ -20,36 +20,36 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
   typealias Version = _2
 }
 
-struct InstructionProtoc {
+public struct InstructionProtoc {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: Int64 = 0
+  public var id: Int64 = 0
 
-  var instruction: String = String()
+  public var instruction: String = String()
 
-  var opcode: Int32 = 0
+  public var opcode: Int32 = 0
 
-  var funcIndex: Int64 = 0
+  public var funcIndex: Int64 = 0
 
-  var pc: Int64 = 0
+  public var pc: Int64 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct InstructionsProtoc {
+public struct InstructionsProtoc {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var instructions: [InstructionProtoc] = []
+  public var instructions: [InstructionProtoc] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
 #if swift(>=5.5) && canImport(_Concurrency)
@@ -60,8 +60,8 @@ extension InstructionsProtoc: @unchecked Sendable {}
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 extension InstructionProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "InstructionProtoc"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = "InstructionProtoc"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "instruction"),
     3: .same(proto: "opcode"),
@@ -69,7 +69,7 @@ extension InstructionProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     5: .same(proto: "pc"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -85,7 +85,7 @@ extension InstructionProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -104,7 +104,7 @@ extension InstructionProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: InstructionProtoc, rhs: InstructionProtoc) -> Bool {
+  public static func ==(lhs: InstructionProtoc, rhs: InstructionProtoc) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.instruction != rhs.instruction {return false}
     if lhs.opcode != rhs.opcode {return false}
@@ -116,12 +116,12 @@ extension InstructionProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension InstructionsProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "InstructionsProtoc"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = "InstructionsProtoc"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "instructions"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -133,14 +133,14 @@ extension InstructionsProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.instructions.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.instructions, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: InstructionsProtoc, rhs: InstructionsProtoc) -> Bool {
+  public static func ==(lhs: InstructionsProtoc, rhs: InstructionsProtoc) -> Bool {
     if lhs.instructions != rhs.instructions {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true

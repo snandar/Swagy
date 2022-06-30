@@ -24,6 +24,8 @@ public struct VM {
     /// from the call frame of the current function.
     public var local0Index: UInt32
     
+    public var currentFuncIndex: FuncIdx?
+    
     // MARK: Hook
     /// for hooking
     public var hookDict: [FuncIdx: String]? = nil
@@ -32,6 +34,9 @@ public struct VM {
     /// to record the pointer passed to the current `free` function
     public var currentFreedPointer: UInt64? = nil
     
+    // MARK: Trace
+    public var instrRecorder = InstrRecorder()
+    private var counter = 0
     
     // TRACING
     //let record = Record()
@@ -181,6 +186,9 @@ extension VM {
             basePointer = 0
         }
         let controlFrame = ControlFrame(opcode: opcode, blockType: funcType, instrs: instrs, bp: basePointer, pc: 0, function: function)
+        if let function = function {
+            currentFuncIndex = function.index
+        }
         controlStack.pushControlFrame(controlFrame)
         if opcode == .call {
             local0Index = UInt32(basePointer)
@@ -281,17 +289,25 @@ extension VM {
                 execInstr(instr)
             }
         }
+        // MARK: Trace
+        instrRecorder.dumpInstr()
     }
+    
     
     mutating func execInstr(_ instr: Instruction) {
         // print
-        if let args = instr.args {
-            print("\(instr.opcode) \(args)")
-        } else {
-            print("\(instr.opcode)")
+        //print(instr)
+        //InstrRecord
+        if let topControlFrame = controlStack.topControlFrame {
+            var funcIndex: Int64 = -1
+            if let currentFuncIndex = currentFuncIndex {
+                funcIndex = Int64(currentFuncIndex)
+            }
+            instrRecorder.record(instr: instr, id: Int64(counter), funcIndex: funcIndex, pc: Int64(topControlFrame.pc))
+            
+            counter += 1
+            
         }
-        
-
         
         switch instr.opcode {
         // MARK: Control Instructions

@@ -1,0 +1,2 @@
+//generate swift file from UserModel proto file
+protoc --swift_out=. --swift_opt=Visibility=Public UserModel.proto
