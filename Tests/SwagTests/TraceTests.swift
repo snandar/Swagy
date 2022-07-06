@@ -42,4 +42,18 @@ final class TraceTests: XCTestCase {
 
         
     }
+    
+    func testOperandStackDecode() throws {
+        let documentDirectoryUrl = try! FileManager.default.url(
+            for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
+        )
+        let fileUrl = documentDirectoryUrl.appendingPathComponent("operand_stack")
+        do {
+            let data = try Foundation.Data(contentsOf: fileUrl)
+            let decodedInfo = try OperationStacksProtoc(serializedData: data)
+            print(decodedInfo.osp)
+        } catch {
+            print(error)
+        }
+    }
 }

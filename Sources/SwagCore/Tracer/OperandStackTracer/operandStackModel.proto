@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message OperationStackProtoc{
+    int64 instructionID = 1;
+    int64 basePointer = 2;
+    int64 stackPointer = 3; 
+    int64 status = 4;
+    int64 address = 5;
+    int64 value = 6;
+}
+
+message OperationStacksProtoc {
+    repeated OperationStackProtoc osp = 1;
+}

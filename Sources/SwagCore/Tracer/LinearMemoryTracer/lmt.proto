@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message linearMemoryTracer{
+	int64 address = 1;
+	int64 readWrite = 2;
+	int64 value = 3;
+}
+
+message linearMemoryTracers{
+	repeated linearMemoryTracer lmts = 1; 
+}
