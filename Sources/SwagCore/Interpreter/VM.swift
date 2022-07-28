@@ -36,11 +36,9 @@ public struct VM {
     
     // MARK: Trace
     public var instrRecorder = InstrRecorder()
-    private var counter = 0
+    private var counter = 1
     public var osRecorder = OperandStackTracer()
-    
-    // TRACING
-    //let record = Record()
+    public var lmRecorder = LinearMemoryTracer()
     
     public init(module: Module) {
         self.module = module
@@ -79,6 +77,7 @@ public struct VM {
             }
         }
         operandStack.recorder = self
+        memory.recorder = self
     }
     
     mutating func initMemory() {
@@ -291,15 +290,16 @@ extension VM {
                 execInstr(instr)
             }
         }
+        
         // MARK: Trace
         instrRecorder.dumpInstr()
         osRecorder.dumpOST()
+        lmRecorder.dumpLMP()
+        
     }
     
     
     mutating func execInstr(_ instr: Instruction) {
-
-        
        
         if let topControlFrame = controlStack.topControlFrame {
             var funcIndex: Int64 = -1
@@ -309,21 +309,8 @@ extension VM {
             //Instrution Recording with InstrRecorder
             instrRecorder.record(instr: instr, id: Int64(counter), funcIndex: funcIndex, pc: Int64(topControlFrame.pc))
             
-            //Operand stack Recording
-            // check if read or write
-            // if there is an arg in the instr, its write
-//            var status : Int32
-//            status = 0
-//            if instr.args != nil {
-//                status = 1
-//            }
-            
-//            osRecorder.record(instrID: counter, bp: local0Index, sp: operandStack.size(), status: Int32(status), address: , value: )
-            counter += 1
-            
         }
         
-        //
         
         switch instr.opcode {
         // MARK: Control Instructions
@@ -732,6 +719,7 @@ extension VM {
         case .truncSat:
             break
         }
+        counter = counter + 1; 
     }
 }
 
@@ -739,4 +727,13 @@ extension VM: StackRecorder {
     public func stackRecord(stackPointer: Int, status: Int, address: Int, value: Int) {
         osRecorder.record(instrID: Int64(counter), bp: Int64(local0Index), sp: Int64(stackPointer), status: Int64(status), address: Int64(address), value: Int64(value))
     }
+}
+
+extension VM: MemoryRecorder{
+    public func memoryRecord(address: Int64, status: Int64, value: Int64) {
+        lmRecorder.record(instrID: Int64(counter), addr: address, status: status, value: value)
+    }
+//    public func memoryRecord(instrID: Int64, address: Int64, status: Int64, value: Int64){
+//        lmRecorder.record(instrID: Int64(counter), addr: address, status: status, value: value)
+//    }
 }

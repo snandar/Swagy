@@ -32,9 +32,10 @@
 		23549D3C284E51C0008DFB48 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 23549D3B284E51C0008DFB48 /* SwiftProtobuf */; };
 		2398513E286DFC06006D72DC /* operandStackModel.proto in Sources */ = {isa = PBXBuildFile; fileRef = 2398513C286DFC06006D72DC /* operandStackModel.proto */; };
 		23985140286DFCCF006D72DC /* operandStackTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398513F286DFCCF006D72DC /* operandStackTracer.swift */; };
-		2398514B28755FD0006D72DC /* lmt.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398514928755FCF006D72DC /* lmt.pb.swift */; };
 		2398514C28755FD0006D72DC /* lmt.proto in Sources */ = {isa = PBXBuildFile; fileRef = 2398514A28755FD0006D72DC /* lmt.proto */; };
 		2398514E2875707B006D72DC /* operandStackModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398514D2875707B006D72DC /* operandStackModel.pb.swift */; };
+		239851502875BA82006D72DC /* LinearMemoryTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398514F2875BA82006D72DC /* LinearMemoryTracer.swift */; };
+		239851542875BD18006D72DC /* lmt.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239851532875BD18006D72DC /* lmt.pb.swift */; };
 		23AD14D428508642005C5B94 /* InstructionModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD14D328508642005C5B94 /* InstructionModel.pb.swift */; };
 		23AD14D628508CA8005C5B94 /* InstrRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD14D528508CA8005C5B94 /* InstrRecorder.swift */; };
 		23F8946D2849E381000E20D9 /* TraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8946B2849E376000E20D9 /* TraceTests.swift */; };
@@ -105,9 +106,10 @@
 		234E506A284F07B4005680D9 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		2398513C286DFC06006D72DC /* operandStackModel.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = operandStackModel.proto; sourceTree = "<group>"; };
 		2398513F286DFCCF006D72DC /* operandStackTracer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operandStackTracer.swift; sourceTree = "<group>"; };
-		2398514928755FCF006D72DC /* lmt.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lmt.pb.swift; sourceTree = "<group>"; };
 		2398514A28755FD0006D72DC /* lmt.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = lmt.proto; sourceTree = "<group>"; };
 		2398514D2875707B006D72DC /* operandStackModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = operandStackModel.pb.swift; sourceTree = "<group>"; };
+		2398514F2875BA82006D72DC /* LinearMemoryTracer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearMemoryTracer.swift; sourceTree = "<group>"; };
+		239851532875BD18006D72DC /* lmt.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lmt.pb.swift; sourceTree = "<group>"; };
 		23AD14D328508642005C5B94 /* InstructionModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionModel.pb.swift; sourceTree = "<group>"; };
 		23AD14D528508CA8005C5B94 /* InstrRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrRecorder.swift; sourceTree = "<group>"; };
 		23F8946B2849E376000E20D9 /* TraceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceTests.swift; sourceTree = "<group>"; };
@@ -202,8 +204,9 @@
 		239851442875551C006D72DC /* LinearMemoryTracer */ = {
 			isa = PBXGroup;
 			children = (
-				2398514928755FCF006D72DC /* lmt.pb.swift */,
 				2398514A28755FD0006D72DC /* lmt.proto */,
+				239851532875BD18006D72DC /* lmt.pb.swift */,
+				2398514F2875BA82006D72DC /* LinearMemoryTracer.swift */,
 			);
 			path = LinearMemoryTracer;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				951641AB25D2CE2400D18813 /* Native.swift in Sources */,
 				OBJ_58 /* Opcode.swift in Sources */,
 				OBJ_59 /* Reader.swift in Sources */,
+				239851502875BA82006D72DC /* LinearMemoryTracer.swift in Sources */,
 				OBJ_60 /* Types.swift in Sources */,
 				951641BC25D6978500D18813 /* Table.swift in Sources */,
 				234E5067284F06EB005680D9 /* InstructionModel.proto in Sources */,
@@ -486,12 +490,12 @@
 				OBJ_63 /* ControlInstructions.swift in Sources */,
 				OBJ_64 /* Instructions.swift in Sources */,
 				2398513E286DFC06006D72DC /* operandStackModel.proto in Sources */,
+				239851542875BD18006D72DC /* lmt.pb.swift in Sources */,
 				951641A425D23F2300D18813 /* Function.swift in Sources */,
 				OBJ_65 /* MemoryInstructions.swift in Sources */,
 				2398514C28755FD0006D72DC /* lmt.proto in Sources */,
 				2398514E2875707B006D72DC /* operandStackModel.pb.swift in Sources */,
 				OBJ_66 /* NumericInstructions.swift in Sources */,
-				2398514B28755FD0006D72DC /* lmt.pb.swift in Sources */,
 				OBJ_67 /* ParametricInstructions.swift in Sources */,
 				OBJ_68 /* VariableInstructions.swift in Sources */,
 				OBJ_69 /* Memory.swift in Sources */,

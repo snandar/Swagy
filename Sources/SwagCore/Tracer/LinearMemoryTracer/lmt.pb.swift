@@ -20,14 +20,16 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
   typealias Version = _2
 }
 
-public struct linearMemoryTracer {
+public struct LinearMemoryProtoc {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
+  public var instrID: Int64 = 0
+
   public var address: Int64 = 0
 
-  public var readWrite: Int64 = 0
+  public var status: Int64 = 0
 
   public var value: Int64 = 0
 
@@ -36,12 +38,12 @@ public struct linearMemoryTracer {
   public init() {}
 }
 
-public struct linearMemoryTracers {
+public struct LinearMemoryProtocs {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  public var lmts: [linearMemoryTracer] = []
+  public var lmps: [LinearMemoryProtoc] = []
 
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
@@ -49,18 +51,19 @@ public struct linearMemoryTracers {
 }
 
 #if swift(>=5.5) && canImport(_Concurrency)
-extension linearMemoryTracer: @unchecked Sendable {}
-extension linearMemoryTracers: @unchecked Sendable {}
+extension LinearMemoryProtoc: @unchecked Sendable {}
+extension LinearMemoryProtocs: @unchecked Sendable {}
 #endif  // swift(>=5.5) && canImport(_Concurrency)
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
-extension linearMemoryTracer: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  public static let protoMessageName: String = "linearMemoryTracer"
+extension LinearMemoryProtoc: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "LinearMemoryProtoc"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "address"),
-    2: .same(proto: "readWrite"),
-    3: .same(proto: "value"),
+    1: .same(proto: "instrID"),
+    2: .same(proto: "address"),
+    3: .same(proto: "status"),
+    4: .same(proto: "value"),
   ]
 
   public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -69,40 +72,45 @@ extension linearMemoryTracer: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
       // allocates stack space for every case branch when no optimizations are
       // enabled. https://github.com/apple/swift-protobuf/issues/1034
       switch fieldNumber {
-      case 1: try { try decoder.decodeSingularInt64Field(value: &self.address) }()
-      case 2: try { try decoder.decodeSingularInt64Field(value: &self.readWrite) }()
-      case 3: try { try decoder.decodeSingularInt64Field(value: &self.value) }()
+      case 1: try { try decoder.decodeSingularInt64Field(value: &self.instrID) }()
+      case 2: try { try decoder.decodeSingularInt64Field(value: &self.address) }()
+      case 3: try { try decoder.decodeSingularInt64Field(value: &self.status) }()
+      case 4: try { try decoder.decodeSingularInt64Field(value: &self.value) }()
       default: break
       }
     }
   }
 
   public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if self.address != 0 {
-      try visitor.visitSingularInt64Field(value: self.address, fieldNumber: 1)
+    if self.instrID != 0 {
+      try visitor.visitSingularInt64Field(value: self.instrID, fieldNumber: 1)
     }
-    if self.readWrite != 0 {
-      try visitor.visitSingularInt64Field(value: self.readWrite, fieldNumber: 2)
+    if self.address != 0 {
+      try visitor.visitSingularInt64Field(value: self.address, fieldNumber: 2)
+    }
+    if self.status != 0 {
+      try visitor.visitSingularInt64Field(value: self.status, fieldNumber: 3)
     }
     if self.value != 0 {
-      try visitor.visitSingularInt64Field(value: self.value, fieldNumber: 3)
+      try visitor.visitSingularInt64Field(value: self.value, fieldNumber: 4)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  public static func ==(lhs: linearMemoryTracer, rhs: linearMemoryTracer) -> Bool {
+  public static func ==(lhs: LinearMemoryProtoc, rhs: LinearMemoryProtoc) -> Bool {
+    if lhs.instrID != rhs.instrID {return false}
     if lhs.address != rhs.address {return false}
-    if lhs.readWrite != rhs.readWrite {return false}
+    if lhs.status != rhs.status {return false}
     if lhs.value != rhs.value {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
-extension linearMemoryTracers: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  public static let protoMessageName: String = "linearMemoryTracers"
+extension LinearMemoryProtocs: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "LinearMemoryProtocs"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "lmts"),
+    1: .same(proto: "lmps"),
   ]
 
   public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -111,21 +119,21 @@ extension linearMemoryTracers: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
       // allocates stack space for every case branch when no optimizations are
       // enabled. https://github.com/apple/swift-protobuf/issues/1034
       switch fieldNumber {
-      case 1: try { try decoder.decodeRepeatedMessageField(value: &self.lmts) }()
+      case 1: try { try decoder.decodeRepeatedMessageField(value: &self.lmps) }()
       default: break
       }
     }
   }
 
   public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.lmts.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.lmts, fieldNumber: 1)
+    if !self.lmps.isEmpty {
+      try visitor.visitRepeatedMessageField(value: self.lmps, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  public static func ==(lhs: linearMemoryTracers, rhs: linearMemoryTracers) -> Bool {
-    if lhs.lmts != rhs.lmts {return false}
+  public static func ==(lhs: LinearMemoryProtocs, rhs: LinearMemoryProtocs) -> Bool {
+    if lhs.lmps != rhs.lmps {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }

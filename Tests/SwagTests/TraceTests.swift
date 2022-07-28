@@ -43,6 +43,20 @@ final class TraceTests: XCTestCase {
         
     }
     
+    func testInstrDecode() throws {
+        let documentDirectoryUrl = try! FileManager.default.url(
+            for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
+        )
+        let fileUrl = documentDirectoryUrl.appendingPathComponent("instr")
+        do {
+            let data = try Foundation.Data(contentsOf: fileUrl)
+            let decodedInfo = try InstructionsProtoc(serializedData: data)
+            print(decodedInfo.instructions)
+        } catch {
+            print(error)
+        }
+    }
+    
     func testOperandStackDecode() throws {
         let documentDirectoryUrl = try! FileManager.default.url(
             for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
@@ -52,6 +66,23 @@ final class TraceTests: XCTestCase {
             let data = try Foundation.Data(contentsOf: fileUrl)
             let decodedInfo = try OperationStacksProtoc(serializedData: data)
             print(decodedInfo.osp)
+        } catch {
+            print(error)
+        }
+    }
+    
+    
+    func testLinearMemoryTraceDecode() throws {
+        let documentDirectoryUrl = try! FileManager.default.url(
+            for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
+        )
+        let fileUrl = documentDirectoryUrl.appendingPathComponent("linear_memory")
+        do {
+            let data = try Foundation.Data(contentsOf: fileUrl)
+            let decodedInfo = try LinearMemoryProtocs(serializedData: data)
+            for lmp in decodedInfo.lmps {
+                print(lmp)
+            }
         } catch {
             print(error)
         }

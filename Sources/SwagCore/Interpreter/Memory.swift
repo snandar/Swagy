@@ -19,11 +19,27 @@ public struct Memory {
     /// momery read and write. Also, if we don't hook, we don't need
     /// to check memory.
     var isStopCheckingMemory = false
+    public var recorder: MemoryRecorder?
     
     init(memoryType: MemType) {
         self.type = memoryType
         self.data = Array<Byte?>.init(repeating: nil, count: Int(memoryType.min) * PAGE_SIZE)
     }
+}
+
+public protocol MemoryRecorder {
+    func memoryRecord(address: Int64, status: Int64, value: Int64)
+}
+
+extension Int64 {
+    init?(_ value: Byte?) {
+        guard let value = value else { return nil }
+        self.init(value)
+    }
+}
+
+
+extension Memory {
     
     func size() -> UInt32 {
         return UInt32(self.data.count / PAGE_SIZE)
@@ -64,6 +80,16 @@ public struct Memory {
         let endIndex = startIndex + buf.count
         let dataSlice = data[startIndex..<endIndex]
         buf = Array(dataSlice)
+        
+        //Record
+        //var count = 0
+        for item in dataSlice.enumerated(){
+            let data = dataSlice[startIndex + item.offset]
+            
+            //count += 1
+            recorder?.memoryRecord(address: Int64(startIndex), status: 1, value: Int64(data) ?? 0)
+        }
+        
     }
     
     mutating func write(offset: UInt64, data: [Byte]) {
@@ -85,7 +111,22 @@ public struct Memory {
         let startIndex = Int(offset)
         let endIndex = startIndex + data.count
         let subrange = startIndex..<endIndex
+        let array = data
+        
         self.data.replaceSubrange(subrange, with: data)
+        
+        //Record
+        
+        //convert [byte] into int64
+        var value : UInt32 = 0
+        let arrayData = NSData(bytes: array, length: 4)
+        arrayData.getBytes(&value, length: 4)
+        value = UInt32(bigEndian: value)
+        
+        //record method
+        recorder?.memoryRecord(address: Int64(offset), status: 2, value: Int64(value))
+        
+        
     }
     
 }
