@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct VM {
+public class VM {
     public var operandStack: OperandStack
     public var controlStack: ControlStack
     public var module: Module
@@ -80,7 +80,7 @@ public struct VM {
         memory.recorder = self
     }
     
-    mutating func initMemory() {
+    func initMemory() {
         if let dataSec = module.dataSec {
             for data in dataSec {
                 for instr in data.offset {
@@ -91,7 +91,7 @@ public struct VM {
         }
     }
     
-    mutating func initGlobals() {
+    func initGlobals() {
         guard let globalSec = module.globalSec else { return }
         for global in globalSec {
             for instr in global.`init` {
@@ -102,7 +102,7 @@ public struct VM {
         }
     }
     
-    mutating func initFuncs() {
+    func initFuncs() {
         linkNativeFuncs()
         if let funcSec = module.funcSec {
             let existingFuncCount = funcs.count
@@ -116,7 +116,7 @@ public struct VM {
         }
     }
     
-    mutating func linkNativeFuncs() {
+    func linkNativeFuncs() {
         if let importSec = module.importSec {
             for imp in importSec {
                 if imp.desc.tag == .func && imp.module == "env" {
@@ -155,7 +155,7 @@ public struct VM {
         }
     }
     
-    mutating func initTable() {
+    func initTable() {
         if let tableSec = module.tableSec,
            tableSec.count > 0 {
             table = Table(type: tableSec[0], elems: [])
@@ -181,7 +181,7 @@ public struct VM {
 extension VM {
     
     // MARK: - block stack
-    mutating func enterBlock(opcode: Opcode, funcType: FuncType, instrs: [Instruction], function: Function? = nil) {
+    func enterBlock(opcode: Opcode, funcType: FuncType, instrs: [Instruction], function: Function? = nil) {
         var basePointer = operandStack.size() - funcType.paramTypes.count
         if basePointer < 0 {
             basePointer = 0
@@ -196,12 +196,12 @@ extension VM {
         }
     }
     
-    mutating func exitBlock() {
+    func exitBlock() {
         let controlFrame = controlStack.popControlFrame()
         clearBlock(controlFrame)
     }
     
-    mutating func clearBlock(_ controlFrame: ControlFrame) {
+    func clearBlock(_ controlFrame: ControlFrame) {
         let results = operandStack.popU64s(controlFrame.blockType.resultTypes.count)
         operandStack.popU64s(operandStack.size() - controlFrame.bp)
         operandStack.pushU64s(results)
@@ -260,7 +260,7 @@ extension VM {
         }
     }
     
-    mutating func resetBlock(_ controlFrame: ControlFrame) {
+    func resetBlock(_ controlFrame: ControlFrame) {
         let results = operandStack.popU64s(controlFrame.blockType.paramTypes.count)
         operandStack.popU64s(operandStack.size() - controlFrame.bp)
         operandStack.pushU64s(results)
@@ -268,7 +268,7 @@ extension VM {
     
     // MARK: - loop
     
-    public mutating func loop() {
+    public func loop() {
         // MARK: Hook
         if hookDict == nil {
             // don't need to hook
@@ -299,7 +299,7 @@ extension VM {
     }
     
     
-    mutating func execInstr(_ instr: Instruction) {
+    func execInstr(_ instr: Instruction) {
        
         if let topControlFrame = controlStack.topControlFrame {
             var funcIndex: Int64 = -1
@@ -719,12 +719,15 @@ extension VM {
         case .truncSat:
             break
         }
-        counter = counter + 1; 
+        counter = counter + 1;
     }
 }
 
 extension VM: StackRecorder {
     public func stackRecord(stackPointer: Int, status: Int, address: Int, value: Int) {
+        //instrID: Int, bp: Int,
+//        print("counter: \(counter)")
+//        print("local0Index: \(local0Index)")
         osRecorder.record(instrID: Int64(counter), bp: Int64(local0Index), sp: Int64(stackPointer), status: Int64(status), address: Int64(address), value: Int64(value))
     }
 }
@@ -733,7 +736,4 @@ extension VM: MemoryRecorder{
     public func memoryRecord(address: Int64, status: Int64, value: Int64) {
         lmRecorder.record(instrID: Int64(counter), addr: address, status: status, value: value)
     }
-//    public func memoryRecord(instrID: Int64, address: Int64, status: Int64, value: Int64){
-//        lmRecorder.record(instrID: Int64(counter), addr: address, status: status, value: value)
-//    }
 }

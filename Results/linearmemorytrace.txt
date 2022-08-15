@@ -1,0 +1,735 @@
+Test Suite 'Selected tests' started at 2022-07-28 16:51:45.103
+Test Suite 'SwagTests.xctest' started at 2022-07-28 16:51:45.105
+Test Suite 'TraceTests' started at 2022-07-28 16:51:45.106
+Test Case '-[SwagTests.TraceTests testLinearMemoryTraceDecode]' started.
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 4177461248
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 2
+value: 4177461248
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 248
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 4194238464
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 248
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 2
+value: 4194238464
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 17039360
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 262144
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 2
+value: 262144
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 2
+value: 262144
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 2
+value: 4042981376
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+value: 240
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+value: 251
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 2
+value: 4059758592
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 2
+value: 4059758592
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 247
+status: 2
+value: 1091155222
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1052
+status: 2
+value: 1107932438
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 17039360
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1028
+status: 2
+value: 17039360
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+value: 241
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+value: 251
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+value: 241
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+value: 251
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1032
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 4194238464
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 241
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 251
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 2
+value: 4194238464
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 444
+status: 2
+value: 1124709654
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 17301504
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+value: 8
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+status: 2
+value: 524288
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 2
+value: 524288
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+value: 8
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2052
+status: 2
+value: 524288
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 2
+value: 4042719232
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+value: 240
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+value: 247
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 2056
+status: 2
+value: 4059496448
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 249
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+value: 255
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 65532
+status: 2
+value: 4059496448
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 37
+status: 2
+value: 1141486870
+
+SwagCore.LinearMemoryProtoc:
+instrID: 3
+address: 1052
+status: 2
+value: 1158264086
+
+Test Case '-[SwagTests.TraceTests testLinearMemoryTraceDecode]' passed (18.932 seconds).
+Test Suite 'TraceTests' passed at 2022-07-28 16:52:04.040.
+	 Executed 1 test, with 0 failures (0 unexpected) in 18.932 (18.934) seconds
+Test Suite 'SwagTests.xctest' passed at 2022-07-28 16:52:04.040.
+	 Executed 1 test, with 0 failures (0 unexpected) in 18.932 (18.935) seconds
+Test Suite 'Selected tests' passed at 2022-07-28 16:52:04.041.
+	 Executed 1 test, with 0 failures (0 unexpected) in 18.932 (18.938) seconds
+Program ended with exit code: 0

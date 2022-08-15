@@ -10,3 +10,4 @@ message LinearMemoryProtoc{
 message LinearMemoryProtocs{
 	repeated LinearMemoryProtoc lmps = 1;
 }
+
