@@ -2,7 +2,7 @@
 //  InstrRecord.swift
 //  SwagCore
 //
-//  Created by yin2 on 8/6/22.
+//  Created by Nandar on 8/6/22.
 //
 
 import Foundation
@@ -48,7 +48,6 @@ public class InstrRecorder
         
         records.removeAll()
     }
-    
     
     
     
