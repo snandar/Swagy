@@ -1,620 +1,620 @@
-Test Suite 'Selected tests' started at 2022-08-13 20:29:02.779
-Test Suite 'SwagTests.xctest' started at 2022-08-13 20:29:02.781
-Test Suite 'TraceTests' started at 2022-08-13 20:29:02.781
+Test Suite 'Selected tests' started at 2022-09-21 14:15:55.667
+Test Suite 'SwagTests.xctest' started at 2022-09-21 14:15:55.669
+Test Suite 'TraceTests' started at 2022-09-21 14:15:55.669
 Test Case '-[SwagTests.TraceTests testLinearMemoryTraceDecode]' started.
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 16
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 16
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 16
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 16
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 21
 status: 2
 value: 4177461248
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 31
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 31
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 31
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 31
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 36
 address: 65532
 status: 2
 value: 4177461248
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 42
 status: 1
 value: 248
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 42
 status: 1
 value: 255
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 42
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 42
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 47
 status: 2
 value: 4194238464
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 55
 address: 65532
 status: 1
 value: 248
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 55
 address: 65532
 status: 1
 value: 255
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 55
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 55
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 60
 address: 65532
 status: 2
 value: 4194238464
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 83
 status: 1
 value: 249
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 83
 status: 1
 value: 255
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 83
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 83
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 90
 status: 1
 value: 249
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 90
 status: 1
 value: 255
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 90
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 90
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 123
 status: 1
 value: 249
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 123
 status: 1
 value: 255
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 123
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 123
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 128
 status: 2
 value: 17039360
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 134
 status: 1
 value: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 134
 status: 1
 value: 4
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 134
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 134
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 139
 status: 2
 value: 262144
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 149
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 149
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 149
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 149
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 154
 address: 1028
 status: 2
 value: 262144
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 164
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 164
 address: 1028
 status: 1
 value: 4
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 164
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 164
 address: 1028
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 169
 address: 1028
 status: 2
 value: 262144
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 179
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 179
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 179
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 179
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 184
 address: 1032
 status: 2
 value: 4042981376
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 194
 address: 1032
 status: 1
 value: 240
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 194
 address: 1032
 status: 1
 value: 251
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 194
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 194
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 199
 address: 1032
 status: 2
 value: 4059758592
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 209
 address: 65532
 status: 1
 value: 249
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 209
 address: 65532
 status: 1
 value: 255
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 209
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 209
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 214
 address: 65532
 status: 2
 value: 4059758592
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 227
 address: 247
 status: 2
-value: 1091155222
+value: 1106894356
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 230
 address: 1052
 status: 2
-value: 1107932438
+value: 1123671572
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 256
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
-status: 1
-value: 4
-
-SwagCore.LinearMemoryProtoc:
-instrID: 3
-status: 1
-
-SwagCore.LinearMemoryProtoc:
-instrID: 3
-status: 1
-
-SwagCore.LinearMemoryProtoc:
-instrID: 3
-status: 1
-
-SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 256
 status: 1
 value: 4
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 256
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 256
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 263
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 263
+status: 1
+value: 4
+
+SwagCore.LinearMemoryProtoc:
+instrID: 263
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 263
+status: 1
+
+SwagCore.LinearMemoryProtoc:
+instrID: 289
 address: 1032
 status: 1
 value: 241
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 289
 address: 1032
 status: 1
 value: 251
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 289
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 289
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 296
 address: 1032
 status: 1
 value: 241
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 296
 address: 1032
 status: 1
 value: 251
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 296
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 296
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 329
 address: 1032
 status: 1
 value: 241
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 329
 address: 1032
 status: 1
 value: 251
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 329
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 329
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 334
 address: 1032
 status: 2
 value: 17301504
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 340
 address: 1032
 status: 1
 value: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 340
 address: 1032
 status: 1
 value: 8
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 340
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 340
 address: 1032
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 345
 address: 1032
 status: 2
 value: 524288
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 355
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 355
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 355
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 355
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 360
 address: 3084
 status: 2
 value: 524288
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 370
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 370
 address: 3084
 status: 1
 value: 8
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 370
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 370
 address: 3084
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 375
 address: 3084
 status: 2
 value: 524288
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 385
 address: 3088
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 385
 address: 3088
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 385
 address: 3088
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 385
 address: 3088
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 390
 address: 3088
 status: 2
 value: 3908239360
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 400
 address: 3088
 status: 1
 value: 232
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 400
 address: 3088
 status: 1
 value: 243
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 400
 address: 3088
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 400
 address: 3088
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 405
 address: 3088
 status: 2
 value: 3925016576
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 415
 address: 65532
 status: 1
 value: 241
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 415
 address: 65532
 status: 1
 value: 251
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 415
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 415
 address: 65532
 status: 1
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 420
 address: 65532
 status: 2
 value: 3925016576
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 433
 address: 1069
 status: 2
-value: 1124709654
+value: 1140448788
 
 SwagCore.LinearMemoryProtoc:
-instrID: 3
+instrID: 436
 address: 2084
 status: 2
-value: 1107932438
+value: 1123671572
 
-Test Case '-[SwagTests.TraceTests testLinearMemoryTraceDecode]' passed (22.145 seconds).
-Test Suite 'TraceTests' passed at 2022-08-13 20:29:24.927.
-	 Executed 1 test, with 0 failures (0 unexpected) in 22.145 (22.146) seconds
-Test Suite 'SwagTests.xctest' passed at 2022-08-13 20:29:24.929.
-	 Executed 1 test, with 0 failures (0 unexpected) in 22.145 (22.148) seconds
-Test Suite 'Selected tests' passed at 2022-08-13 20:29:24.930.
-	 Executed 1 test, with 0 failures (0 unexpected) in 22.145 (22.151) seconds
+Test Case '-[SwagTests.TraceTests testLinearMemoryTraceDecode]' passed (19.091 seconds).
+Test Suite 'TraceTests' passed at 2022-09-21 14:16:14.762.
+	 Executed 1 test, with 0 failures (0 unexpected) in 19.091 (19.093) seconds
+Test Suite 'SwagTests.xctest' passed at 2022-09-21 14:16:14.763.
+	 Executed 1 test, with 0 failures (0 unexpected) in 19.091 (19.094) seconds
+Test Suite 'Selected tests' passed at 2022-09-21 14:16:14.763.
+	 Executed 1 test, with 0 failures (0 unexpected) in 19.091 (19.096) seconds
 Program ended with exit code: 0

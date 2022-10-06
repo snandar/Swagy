@@ -1,0 +1,1351 @@
+Test Suite 'Selected tests' started at 2022-09-30 01:02:18.254
+Test Suite 'SwagTests.xctest' started at 2022-09-30 01:02:18.256
+Test Suite 'TraceTests' started at 2022-09-30 01:02:18.257
+Test Case '-[SwagTests.TraceTests testInstrDecode]' started.
+[SwagCore.InstructionProtoc:
+id: 3
+instruction: "i32.const 1024"
+opcode: 65
+funcIndex: 14
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 4
+instruction: "call 10"
+opcode: 16
+funcIndex: 14
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 5
+instruction: "global.get 1"
+opcode: 35
+funcIndex: 10
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 6
+instruction: "i32.eqz"
+opcode: 69
+funcIndex: 10
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 7
+instruction: "if IfArgs(blockType: -64, instrutions1: [call 7], instrutions2: nil)"
+opcode: 4
+funcIndex: 10
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 8
+instruction: "call 7"
+opcode: 16
+funcIndex: 10
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 9
+instruction: "i32.const 0"
+opcode: 65
+funcIndex: 7
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 10
+instruction: "global.get 0"
+opcode: 35
+funcIndex: 7
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 11
+instruction: "i32.const 8"
+opcode: 65
+funcIndex: 7
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 12
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 7
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 13
+instruction: "call 4"
+opcode: 16
+funcIndex: 7
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 14
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 15
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 16
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 17
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 18
+instruction: "i32.and"
+opcode: 113
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 19
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 20
+instruction: "i32.or"
+opcode: 114
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 21
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 22
+instruction: "global.get 0"
+opcode: 35
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 23
+instruction: "i32.const 4"
+opcode: 65
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 24
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 25
+instruction: "global.get 0"
+opcode: 35
+funcIndex: 4
+pc: 9
+, SwagCore.InstructionProtoc:
+id: 26
+instruction: "i32.const 8"
+opcode: 65
+funcIndex: 4
+pc: 10
+, SwagCore.InstructionProtoc:
+id: 27
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 4
+pc: 11
+, SwagCore.InstructionProtoc:
+id: 28
+instruction: "call 4"
+opcode: 16
+funcIndex: 4
+pc: 12
+, SwagCore.InstructionProtoc:
+id: 29
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 30
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 31
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 32
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 33
+instruction: "i32.and"
+opcode: 113
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 34
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 35
+instruction: "i32.or"
+opcode: 114
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 36
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 37
+instruction: "i32.const 0"
+opcode: 65
+funcIndex: 4
+pc: 13
+, SwagCore.InstructionProtoc:
+id: 38
+instruction: "i32.const 1"
+opcode: 65
+funcIndex: 4
+pc: 14
+, SwagCore.InstructionProtoc:
+id: 39
+instruction: "call 5"
+opcode: 16
+funcIndex: 4
+pc: 15
+, SwagCore.InstructionProtoc:
+id: 40
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 41
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 42
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 5
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 43
+instruction: "i32.const -2"
+opcode: 65
+funcIndex: 5
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 44
+instruction: "i32.and"
+opcode: 113
+funcIndex: 5
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 45
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 46
+instruction: "i32.or"
+opcode: 114
+funcIndex: 5
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 47
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 5
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 48
+instruction: "global.get 0"
+opcode: 35
+funcIndex: 5
+pc: 16
+, SwagCore.InstructionProtoc:
+id: 49
+instruction: "i32.const 4"
+opcode: 65
+funcIndex: 5
+pc: 17
+, SwagCore.InstructionProtoc:
+id: 50
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 5
+pc: 18
+, SwagCore.InstructionProtoc:
+id: 51
+instruction: "i32.const 1"
+opcode: 65
+funcIndex: 5
+pc: 19
+, SwagCore.InstructionProtoc:
+id: 52
+instruction: "call 5"
+opcode: 16
+funcIndex: 5
+pc: 20
+, SwagCore.InstructionProtoc:
+id: 53
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 54
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 55
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 5
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 56
+instruction: "i32.const -2"
+opcode: 65
+funcIndex: 5
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 57
+instruction: "i32.and"
+opcode: 113
+funcIndex: 5
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 58
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 59
+instruction: "i32.or"
+opcode: 114
+funcIndex: 5
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 60
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 5
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 61
+instruction: "i32.const 1"
+opcode: 65
+funcIndex: 5
+pc: 21
+, SwagCore.InstructionProtoc:
+id: 62
+instruction: "global.set 1"
+opcode: 36
+funcIndex: 5
+pc: 22
+, SwagCore.InstructionProtoc:
+id: 63
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 64
+instruction: "call 6"
+opcode: 16
+funcIndex: 5
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 65
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 6
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 66
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 6
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 67
+instruction: "i32.add"
+opcode: 106
+funcIndex: 6
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 68
+instruction: "i32.const -4"
+opcode: 65
+funcIndex: 6
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 69
+instruction: "i32.and"
+opcode: 113
+funcIndex: 6
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 70
+instruction: "local.set 0"
+opcode: 33
+funcIndex: 6
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 71
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 6
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 72
+instruction: "call 9"
+opcode: 16
+funcIndex: 6
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 73
+instruction: "i32.const 0"
+opcode: 65
+funcIndex: 9
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 74
+instruction: "local.set 1"
+opcode: 33
+funcIndex: 9
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 75
+instruction: "loop BlockArgs(blockType: -64, instrutions: [local.get 1, global.get 0, i32.lt_u, if IfArgs(blockType: -64, instrutions1: [], instrutions2: Optional([i32.const 0, return])), local.get 1, call 2, local.set 2, local.get 1, call 3, local.set 3, local.get 1, i32.const 4, i32.add, local.set 4, local.get 3, i32.const 1, i32.eq, if IfArgs(blockType: -64, instrutions1: [local.get 0, local.get 2, i32.gt_u, if IfArgs(blockType: -64, instrutions1: [local.get 1, local.get 2, i32.const 8, i32.add, i32.add, local.set 1, br 2], instrutions2: Optional([local.get 0, local.get 2, i32.const 8, i32.sub, i32.lt_u, if IfArgs(blockType: -64, instrutions1: [local.get 2, local.get 0, i32.sub, i32.const 8, i32.sub, local.set 5, local.get 1, local.get 0, call 4, local.get 1, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, local.get 0, call 4, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, local.get 5, call 4, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, i32.const 1, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, local.get 5, call 4, local.get 4, return], instrutions2: Optional([local.get 1, i32.const 0, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 4, return]))]))], instrutions2: Optional([local.get 1, local.get 2, i32.const 8, i32.add, i32.add, local.set 1, br 1]))])"
+opcode: 3
+funcIndex: 9
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 76
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 9
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 77
+instruction: "global.get 0"
+opcode: 35
+funcIndex: 9
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 78
+instruction: "i32.lt_u"
+opcode: 73
+funcIndex: 9
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 79
+instruction: "if IfArgs(blockType: -64, instrutions1: [], instrutions2: Optional([i32.const 0, return]))"
+opcode: 4
+funcIndex: 9
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 80
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 9
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 81
+instruction: "call 2"
+opcode: 16
+funcIndex: 9
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 82
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 2
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 83
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 2
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 84
+instruction: "i32.const -4"
+opcode: 65
+funcIndex: 2
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 85
+instruction: "i32.and"
+opcode: 113
+funcIndex: 2
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 86
+instruction: "local.set 2"
+opcode: 33
+funcIndex: 2
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 87
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 2
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 88
+instruction: "call 3"
+opcode: 16
+funcIndex: 2
+pc: 9
+, SwagCore.InstructionProtoc:
+id: 89
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 3
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 90
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 3
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 91
+instruction: "i32.const 1"
+opcode: 65
+funcIndex: 3
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 92
+instruction: "i32.and"
+opcode: 113
+funcIndex: 3
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 93
+instruction: "local.set 3"
+opcode: 33
+funcIndex: 3
+pc: 10
+, SwagCore.InstructionProtoc:
+id: 94
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 3
+pc: 11
+, SwagCore.InstructionProtoc:
+id: 95
+instruction: "i32.const 4"
+opcode: 65
+funcIndex: 3
+pc: 12
+, SwagCore.InstructionProtoc:
+id: 96
+instruction: "i32.add"
+opcode: 106
+funcIndex: 3
+pc: 13
+, SwagCore.InstructionProtoc:
+id: 97
+instruction: "local.set 4"
+opcode: 33
+funcIndex: 3
+pc: 14
+, SwagCore.InstructionProtoc:
+id: 98
+instruction: "local.get 3"
+opcode: 32
+funcIndex: 3
+pc: 15
+, SwagCore.InstructionProtoc:
+id: 99
+instruction: "i32.const 1"
+opcode: 65
+funcIndex: 3
+pc: 16
+, SwagCore.InstructionProtoc:
+id: 100
+instruction: "i32.eq"
+opcode: 70
+funcIndex: 3
+pc: 17
+, SwagCore.InstructionProtoc:
+id: 101
+instruction: "if IfArgs(blockType: -64, instrutions1: [local.get 0, local.get 2, i32.gt_u, if IfArgs(blockType: -64, instrutions1: [local.get 1, local.get 2, i32.const 8, i32.add, i32.add, local.set 1, br 2], instrutions2: Optional([local.get 0, local.get 2, i32.const 8, i32.sub, i32.lt_u, if IfArgs(blockType: -64, instrutions1: [local.get 2, local.get 0, i32.sub, i32.const 8, i32.sub, local.set 5, local.get 1, local.get 0, call 4, local.get 1, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, local.get 0, call 4, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, local.get 5, call 4, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, i32.const 1, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, local.get 5, call 4, local.get 4, return], instrutions2: Optional([local.get 1, i32.const 0, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 4, return]))]))], instrutions2: Optional([local.get 1, local.get 2, i32.const 8, i32.add, i32.add, local.set 1, br 1]))"
+opcode: 4
+funcIndex: 3
+pc: 18
+, SwagCore.InstructionProtoc:
+id: 102
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 3
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 103
+instruction: "local.get 2"
+opcode: 32
+funcIndex: 3
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 104
+instruction: "i32.gt_u"
+opcode: 75
+funcIndex: 3
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 105
+instruction: "if IfArgs(blockType: -64, instrutions1: [local.get 1, local.get 2, i32.const 8, i32.add, i32.add, local.set 1, br 2], instrutions2: Optional([local.get 0, local.get 2, i32.const 8, i32.sub, i32.lt_u, if IfArgs(blockType: -64, instrutions1: [local.get 2, local.get 0, i32.sub, i32.const 8, i32.sub, local.set 5, local.get 1, local.get 0, call 4, local.get 1, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, local.get 0, call 4, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, local.get 5, call 4, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, i32.const 1, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, local.get 5, call 4, local.get 4, return], instrutions2: Optional([local.get 1, i32.const 0, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 4, return]))]))"
+opcode: 4
+funcIndex: 3
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 106
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 3
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 107
+instruction: "local.get 2"
+opcode: 32
+funcIndex: 3
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 108
+instruction: "i32.const 8"
+opcode: 65
+funcIndex: 3
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 109
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 3
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 110
+instruction: "i32.lt_u"
+opcode: 73
+funcIndex: 3
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 111
+instruction: "if IfArgs(blockType: -64, instrutions1: [local.get 2, local.get 0, i32.sub, i32.const 8, i32.sub, local.set 5, local.get 1, local.get 0, call 4, local.get 1, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, local.get 0, call 4, local.get 1, local.get 0, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, local.get 5, call 4, local.get 1, local.get 0, i32.add, i32.const 8, i32.add, i32.const 1, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, local.get 5, call 4, local.get 4, return], instrutions2: Optional([local.get 1, i32.const 0, call 5, local.get 1, local.get 2, i32.add, i32.const 4, i32.add, i32.const 0, call 5, local.get 4, return]))"
+opcode: 4
+funcIndex: 3
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 112
+instruction: "local.get 2"
+opcode: 32
+funcIndex: 3
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 113
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 3
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 114
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 3
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 115
+instruction: "i32.const 8"
+opcode: 65
+funcIndex: 3
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 116
+instruction: "i32.sub"
+opcode: 107
+funcIndex: 3
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 117
+instruction: "local.set 5"
+opcode: 33
+funcIndex: 3
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 118
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 3
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 119
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 3
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 120
+instruction: "call 4"
+opcode: 16
+funcIndex: 3
+pc: 9
+, SwagCore.InstructionProtoc:
+id: 121
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 122
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 123
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 124
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 125
+instruction: "i32.and"
+opcode: 113
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 126
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 127
+instruction: "i32.or"
+opcode: 114
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 128
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 129
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 10
+, SwagCore.InstructionProtoc:
+id: 130
+instruction: "i32.const 0"
+opcode: 65
+funcIndex: 4
+pc: 11
+, SwagCore.InstructionProtoc:
+id: 131
+instruction: "call 5"
+opcode: 16
+funcIndex: 4
+pc: 12
+, SwagCore.InstructionProtoc:
+id: 132
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 133
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 134
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 5
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 135
+instruction: "i32.const -2"
+opcode: 65
+funcIndex: 5
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 136
+instruction: "i32.and"
+opcode: 113
+funcIndex: 5
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 137
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 138
+instruction: "i32.or"
+opcode: 114
+funcIndex: 5
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 139
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 5
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 140
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 13
+, SwagCore.InstructionProtoc:
+id: 141
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 14
+, SwagCore.InstructionProtoc:
+id: 142
+instruction: "i32.add"
+opcode: 106
+funcIndex: 5
+pc: 15
+, SwagCore.InstructionProtoc:
+id: 143
+instruction: "i32.const 4"
+opcode: 65
+funcIndex: 5
+pc: 16
+, SwagCore.InstructionProtoc:
+id: 144
+instruction: "i32.add"
+opcode: 106
+funcIndex: 5
+pc: 17
+, SwagCore.InstructionProtoc:
+id: 145
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 18
+, SwagCore.InstructionProtoc:
+id: 146
+instruction: "call 4"
+opcode: 16
+funcIndex: 5
+pc: 19
+, SwagCore.InstructionProtoc:
+id: 147
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 148
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 149
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 150
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 151
+instruction: "i32.and"
+opcode: 113
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 152
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 153
+instruction: "i32.or"
+opcode: 114
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 154
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 155
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 20
+, SwagCore.InstructionProtoc:
+id: 156
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 21
+, SwagCore.InstructionProtoc:
+id: 157
+instruction: "i32.add"
+opcode: 106
+funcIndex: 4
+pc: 22
+, SwagCore.InstructionProtoc:
+id: 158
+instruction: "i32.const 4"
+opcode: 65
+funcIndex: 4
+pc: 23
+, SwagCore.InstructionProtoc:
+id: 159
+instruction: "i32.add"
+opcode: 106
+funcIndex: 4
+pc: 24
+, SwagCore.InstructionProtoc:
+id: 160
+instruction: "i32.const 0"
+opcode: 65
+funcIndex: 4
+pc: 25
+, SwagCore.InstructionProtoc:
+id: 161
+instruction: "call 5"
+opcode: 16
+funcIndex: 4
+pc: 26
+, SwagCore.InstructionProtoc:
+id: 162
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 163
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 164
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 5
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 165
+instruction: "i32.const -2"
+opcode: 65
+funcIndex: 5
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 166
+instruction: "i32.and"
+opcode: 113
+funcIndex: 5
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 167
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 168
+instruction: "i32.or"
+opcode: 114
+funcIndex: 5
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 169
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 5
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 170
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 27
+, SwagCore.InstructionProtoc:
+id: 171
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 28
+, SwagCore.InstructionProtoc:
+id: 172
+instruction: "i32.add"
+opcode: 106
+funcIndex: 5
+pc: 29
+, SwagCore.InstructionProtoc:
+id: 173
+instruction: "i32.const 8"
+opcode: 65
+funcIndex: 5
+pc: 30
+, SwagCore.InstructionProtoc:
+id: 174
+instruction: "i32.add"
+opcode: 106
+funcIndex: 5
+pc: 31
+, SwagCore.InstructionProtoc:
+id: 175
+instruction: "local.get 5"
+opcode: 32
+funcIndex: 5
+pc: 32
+, SwagCore.InstructionProtoc:
+id: 176
+instruction: "call 4"
+opcode: 16
+funcIndex: 5
+pc: 33
+, SwagCore.InstructionProtoc:
+id: 177
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 178
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 179
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 180
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 181
+instruction: "i32.and"
+opcode: 113
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 182
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 183
+instruction: "i32.or"
+opcode: 114
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 184
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 185
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 34
+, SwagCore.InstructionProtoc:
+id: 186
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 35
+, SwagCore.InstructionProtoc:
+id: 187
+instruction: "i32.add"
+opcode: 106
+funcIndex: 4
+pc: 36
+, SwagCore.InstructionProtoc:
+id: 188
+instruction: "i32.const 8"
+opcode: 65
+funcIndex: 4
+pc: 37
+, SwagCore.InstructionProtoc:
+id: 189
+instruction: "i32.add"
+opcode: 106
+funcIndex: 4
+pc: 38
+, SwagCore.InstructionProtoc:
+id: 190
+instruction: "i32.const 1"
+opcode: 65
+funcIndex: 4
+pc: 39
+, SwagCore.InstructionProtoc:
+id: 191
+instruction: "call 5"
+opcode: 16
+funcIndex: 4
+pc: 40
+, SwagCore.InstructionProtoc:
+id: 192
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 193
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 5
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 194
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 5
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 195
+instruction: "i32.const -2"
+opcode: 65
+funcIndex: 5
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 196
+instruction: "i32.and"
+opcode: 113
+funcIndex: 5
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 197
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 198
+instruction: "i32.or"
+opcode: 114
+funcIndex: 5
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 199
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 5
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 200
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 5
+pc: 41
+, SwagCore.InstructionProtoc:
+id: 201
+instruction: "local.get 2"
+opcode: 32
+funcIndex: 5
+pc: 42
+, SwagCore.InstructionProtoc:
+id: 202
+instruction: "i32.add"
+opcode: 106
+funcIndex: 5
+pc: 43
+, SwagCore.InstructionProtoc:
+id: 203
+instruction: "i32.const 4"
+opcode: 65
+funcIndex: 5
+pc: 44
+, SwagCore.InstructionProtoc:
+id: 204
+instruction: "i32.add"
+opcode: 106
+funcIndex: 5
+pc: 45
+, SwagCore.InstructionProtoc:
+id: 205
+instruction: "local.get 5"
+opcode: 32
+funcIndex: 5
+pc: 46
+, SwagCore.InstructionProtoc:
+id: 206
+instruction: "call 4"
+opcode: 16
+funcIndex: 5
+pc: 47
+, SwagCore.InstructionProtoc:
+id: 207
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 1
+, SwagCore.InstructionProtoc:
+id: 208
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 2
+, SwagCore.InstructionProtoc:
+id: 209
+instruction: "i32.load MemArg(align: 2, offset: 0)"
+opcode: 40
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 210
+instruction: "i32.const 3"
+opcode: 65
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 211
+instruction: "i32.and"
+opcode: 113
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 212
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 6
+, SwagCore.InstructionProtoc:
+id: 213
+instruction: "i32.or"
+opcode: 114
+funcIndex: 4
+pc: 7
+, SwagCore.InstructionProtoc:
+id: 214
+instruction: "i32.store MemArg(align: 2, offset: 0)"
+opcode: 54
+funcIndex: 4
+pc: 8
+, SwagCore.InstructionProtoc:
+id: 215
+instruction: "local.get 4"
+opcode: 32
+funcIndex: 4
+pc: 48
+, SwagCore.InstructionProtoc:
+id: 216
+instruction: "return"
+opcode: 15
+funcIndex: 4
+pc: 49
+, SwagCore.InstructionProtoc:
+id: 217
+instruction: "local.set 1"
+opcode: 33
+funcIndex: 4
+pc: 9
+, SwagCore.InstructionProtoc:
+id: 218
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 10
+, SwagCore.InstructionProtoc:
+id: 219
+instruction: "i32.eqz"
+opcode: 69
+funcIndex: 4
+pc: 11
+, SwagCore.InstructionProtoc:
+id: 220
+instruction: "if IfArgs(blockType: -64, instrutions1: [local.get 0, i32.const 65527, i32.add, i32.const 65528, i32.div_u, local.set 2, local.get 2, call 8, local.get 0, call 9, local.set 1], instrutions2: nil)"
+opcode: 4
+funcIndex: 4
+pc: 12
+, SwagCore.InstructionProtoc:
+id: 221
+instruction: "local.get 1"
+opcode: 32
+funcIndex: 4
+pc: 13
+, SwagCore.InstructionProtoc:
+id: 222
+instruction: "local.set 0"
+opcode: 33
+funcIndex: 4
+pc: 3
+, SwagCore.InstructionProtoc:
+id: 223
+instruction: "local.get 0"
+opcode: 32
+funcIndex: 4
+pc: 4
+, SwagCore.InstructionProtoc:
+id: 224
+instruction: "i32.const 65"
+opcode: 65
+funcIndex: 4
+pc: 5
+, SwagCore.InstructionProtoc:
+id: 225
+instruction: "i32.store8 MemArg(align: 0, offset: 243)"
+opcode: 58
+funcIndex: 4
+pc: 6
+]
+Test Case '-[SwagTests.TraceTests testInstrDecode]' passed (18.767 seconds).
+Test Suite 'TraceTests' passed at 2022-09-30 01:02:37.025.
+	 Executed 1 test, with 0 failures (0 unexpected) in 18.767 (18.768) seconds
+Test Suite 'SwagTests.xctest' passed at 2022-09-30 01:02:37.026.
+	 Executed 1 test, with 0 failures (0 unexpected) in 18.767 (18.770) seconds
+Test Suite 'Selected tests' passed at 2022-09-30 01:02:37.026.
+	 Executed 1 test, with 0 failures (0 unexpected) in 18.767 (18.772) seconds
+Program ended with exit code: 0
